@@ -21,7 +21,6 @@ export default {
   },
   methods: {
     translated(text, language) {
-      //alert(text)
       this.$http.get('https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20171028T130152Z.9bd7ef5e0e77c33a.df81ee1cdcabcc7068492afa3592e68f53e9de5f&lang='+ language+'&text='+text)
       .then((response)=>{this.translatedtext = response.body.text[0]})
     }
