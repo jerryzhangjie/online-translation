@@ -27,7 +27,6 @@ export default {
   },
   methods: {
     translate(e) {
-      //alert(this.translationtext)
       this.$emit('translate', this.translationtext, this.language)
       e.preventDefault()
     }
